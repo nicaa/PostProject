@@ -14,3 +14,18 @@ C:\Users\Nichlas\documents\visual studio 2013\Projects\NameGenApp\NameGenApp\obj
 C:\Users\Nichlas\documents\visual studio 2013\Projects\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe
 C:\Users\Nichlas\documents\visual studio 2013\Projects\NameGenApp\NameGenApp\obj\Debug\NameGenApp.pdb
 C:\Users\Nichlas\documents\visual studio 2013\Projects\NameGenApp\NameGenApp\obj\Debug\NameGenApp.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.exe.config
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.exe
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\EntityFramework.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\EntityFramework.xml
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.Form1.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.Migrations.init.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.Migrations.init2.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.Properties.Resources.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.csproj.GenerateResource.Cache

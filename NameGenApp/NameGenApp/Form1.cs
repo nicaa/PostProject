@@ -15,7 +15,6 @@ namespace NameGenApp
     public partial class Form1 : Form
     {
        // InitRandomPersons randomPerson = new InitRandomPersons();
-        DataBaseContext db = new DataBaseContext();
         Person person = new Person();
         MySQLDatabase mySqlDB = new MySQLDatabase();
        
