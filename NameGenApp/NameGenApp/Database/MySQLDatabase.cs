@@ -1,32 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-
-
-namespace NameGenApp.Models
+namespace NameGenApp.Database
 {
     class MySQLDatabase
     {
 
-        String connectionString = "server=localhost;" + "database=test;" + "user=root;" + "password=1234";
-        MySqlConnection con;
+        private String connectionString;
+        private MySqlConnection con;
         String query1 = "Select * from person";
-        
+        private DataSource dataSource;
         
         
 
         public MySQLDatabase()
         {
+            dataSource = new DataSource();
+            connectionString = dataSource.SERVER + dataSource.DATABASE + dataSource.USER + dataSource.PASSWORD;
             con = new MySqlConnection(connectionString);
         }
 
         public void SelectAll()
         {
-            
             con.Open();
             
             MySqlCommand command = new MySqlCommand(query1, con);
