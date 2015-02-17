@@ -5,3 +5,5 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Deb
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.csprojResolveAssemblyReference.cache
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.dll
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\Moq.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\Moq.xml

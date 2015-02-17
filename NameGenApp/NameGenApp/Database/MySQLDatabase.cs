@@ -3,9 +3,8 @@ using MySql.Data.MySqlClient;
 
 namespace NameGenApp.Database
 {
-    class MySQLDatabase
+    public class MySQLDatabase
     {
-
         private String connectionString;
         private MySqlConnection con;
         String query1 = "Select * from person";
@@ -28,7 +27,6 @@ namespace NameGenApp.Database
             
             MySqlDataReader myReader = command.ExecuteReader();// when reading use ExecuteReader!!
             con.Close();
-
         }
 
         public void insertRasmus(String fName, String LName)

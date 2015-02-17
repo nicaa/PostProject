@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace NameGenApp.Models
 {
-    class Package
+    public class Package
     {
+        public int packageId;
+        public Person sender;
+        public Person recipient;
+
+        public String destinationStreet;
+        public String destinationCity;
+        public String destinationPostalCode;
     }
 }
