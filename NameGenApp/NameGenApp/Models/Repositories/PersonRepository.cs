@@ -28,7 +28,7 @@ namespace NameGenApp.Models.Repositories
         public Person GetPerson(int personId)
         {
             Person person = new Person();
-            String query = "SELECT * FROM test WHERE id = " + personId;
+            String query = "SELECT * FROM person WHERE personId = " + personId;
 
             command = new MySqlCommand(query, mySqlConnection);
 
@@ -37,13 +37,13 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                person.id = Convert.ToInt32(dataReader["0"]);
-                person.fName = dataReader["1"].ToString();
-                person.lName = dataReader["2"].ToString();
+                person.id = Convert.ToInt32(dataReader["personId"]);
+                person.fName = dataReader["fName"].ToString();
+                person.lName = dataReader["lName"].ToString();
             }
 
             mySqlConnection.Close();
-
+            return person;
 
 
         }

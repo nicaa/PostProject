@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using NameGenApp.Database;
@@ -30,6 +31,17 @@ namespace PostProjectTests
             mock.Object.CreatePackage(package);
             mock.VerifyAll();
             mock.Verify(t => t.CreatePackage(package));
+        }
+
+        [TestMethod]
+        public void GetAllPackagesTestMethod2()
+        {
+            // Integration testing without mock
+            PackageRepository packageRepository = new PackageRepository();
+
+            List<Package> packages = packageRepository.GetAllPackages();
+
+            Assert.IsNotNull(packages);
         }
     }
 }
