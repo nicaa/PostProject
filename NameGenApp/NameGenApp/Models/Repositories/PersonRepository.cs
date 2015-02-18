@@ -18,11 +18,14 @@ namespace NameGenApp.Models.Repositories
         private MySqlCommand command;
         private MySqlDataReader dataReader;
 
+        private QueryHandler queryHandler;
+
         public PersonRepository()
         {
             dataSource = new DataSource();
             connectionString = dataSource.SERVER + dataSource.DATABASE + dataSource.USER + dataSource.PASSWORD;
             mySqlConnection = new MySqlConnection(connectionString);
+            queryHandler = new QueryHandler();
         }
 
         public Person GetPerson(int personId)
@@ -37,12 +40,11 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                person.id = Convert.ToInt32(dataReader["personId"]);
-                person.fName = dataReader["fName"].ToString();
-                person.lName = dataReader["lName"].ToString();
+                person = queryHandler.GetPersonFromDataReader(dataReader);
             }
 
             mySqlConnection.Close();
+
             return person;
 
 

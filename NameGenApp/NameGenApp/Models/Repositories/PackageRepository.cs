@@ -20,12 +20,15 @@ namespace NameGenApp.Models.Repositories
         private String connectionString;
         private IPersonRepository _personRepository;
 
+        private QueryHandler queryHandler;
+
         public PackageRepository()
         {
             database = new MySQLDatabase();
             dataSource = new DataSource();
             connectionString = dataSource.SERVER + dataSource.DATABASE + dataSource.USER + dataSource.PASSWORD;
             mySqlConnection = new MySqlConnection(connectionString);
+            queryHandler = new QueryHandler();
             _personRepository = new PersonRepository();
         }
 
@@ -40,19 +43,7 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                Package package = new Package();
-                Person sender = new Person();
-                Person recipient = new Person();
-                int senderId;
-                int recipientId;
-
-                package.packageId = Convert.ToInt32(dataReader[0]);
-                senderId = Convert.ToInt32(dataReader[1]);
-                recipientId = Convert.ToInt32(dataReader[2]);
-
-                package.sender = _personRepository.GetPerson(senderId);
-                package.recipient = _personRepository.GetPerson(recipientId);
-
+                Package package = queryHandler.ExtractPackageFromDataReader(dataReader);
                 packages.Add(package);
             }
 
@@ -74,17 +65,7 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                Person sender = new Person();
-                Person recipient = new Person();
-                int senderId;
-                int recipientId;
-
-                package.packageId = Convert.ToInt32(dataReader[0]);
-                senderId = Convert.ToInt32(dataReader[1]);
-                recipientId = Convert.ToInt32(dataReader[2]);
-
-                package.sender = _personRepository.GetPerson(senderId);
-                package.recipient = _personRepository.GetPerson(recipientId);
+                queryHandler.ExtractPackageFromDataReader(dataReader);
             }
 
             return package;
