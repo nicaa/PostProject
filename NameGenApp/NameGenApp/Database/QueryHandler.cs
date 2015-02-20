@@ -13,7 +13,7 @@ namespace NameGenApp.Database
     {
         public Package ExtractPackageFromDataReader(MySqlDataReader dataReader)
         {
-            Package package = new Package();
+            Package package = new Package(); // optimize when testing
             Person sender = new Person();
             Person recipient = new Person();
             IPersonRepository _personRepository = new PersonRepository();
