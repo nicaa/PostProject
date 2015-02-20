@@ -11,9 +11,8 @@ namespace NameGenApp.Models.Repositories
 {
     public class PackageRepository : IPackageRepository
     {
-        private MySQLDatabase database;
         private DataSource dataSource;
-        private MySqlConnection mySqlConnection;
+        private MySqlConnection databaseConnection;
         private MySqlCommand command;
         private MySqlDataReader dataReader;
 
@@ -24,10 +23,9 @@ namespace NameGenApp.Models.Repositories
 
         public PackageRepository()
         {
-            database = new MySQLDatabase();
             dataSource = new DataSource();
             connectionString = dataSource.Server + dataSource.Database + dataSource.User + dataSource.Password;
-            mySqlConnection = new MySqlConnection(connectionString);
+            databaseConnection = new MySqlConnection(connectionString);
             queryHandler = new QueryHandler();
             _personRepository = new PersonRepository();
         }
@@ -37,8 +35,8 @@ namespace NameGenApp.Models.Repositories
             List<Package> packages = new List<Package>();
             String query = "SELECT * FROM " + dataSource.TablePackages;
 
-            command = new MySqlCommand(query, mySqlConnection);
-            mySqlConnection.Open();
+            command = new MySqlCommand(query, databaseConnection);
+            databaseConnection.Open();
             dataReader = command.ExecuteReader();
 
             while (dataReader.Read())
@@ -48,7 +46,7 @@ namespace NameGenApp.Models.Repositories
             }
 
 
-            mySqlConnection.Close();
+            databaseConnection.Close();
 
             return packages;
         }
@@ -57,11 +55,11 @@ namespace NameGenApp.Models.Repositories
         {
             Package package = new Package();
             String query = "SELECT * FROM " + dataSource.TablePackages +" WHERE " + dataSource.PackageId + " = " + packageId;
-            command = new MySqlCommand(query, mySqlConnection);
+            command = new MySqlCommand(query, databaseConnection);
             
-            mySqlConnection.Open();
+            databaseConnection.Open();
             dataReader = command.ExecuteReader();
-            mySqlConnection.Close();
+            databaseConnection.Close();
 
             while (dataReader.Read())
             {
@@ -78,7 +76,14 @@ namespace NameGenApp.Models.Repositories
 
         public void CreatePackage(Package package)
         {
-            throw new NotImplementedException();
+            String query = "INSERT into " + dataSource.TablePackages + " (" 
+                + dataSource.DestinationStreet + ", " 
+                + dataSource.Database + ", " 
+                + dataSource.DestinationPostalCode + ")" +
+                " VALUES('" 
+                + package.destinationStreet + "', " 
+                + package.destinationCity + "' '" 
+                + package.destinationPostalCode + "')";
         }
     }
 

@@ -10,9 +10,8 @@ namespace NameGenApp.Models.Repositories
 {
     public class PersonRepository : IPersonRepository
     {
-        private MySQLDatabase database;
         private DataSource dataSource;
-        private MySqlConnection mySqlConnection;
+        private MySqlConnection databaseConnection;
         private String connectionString;
 
         private MySqlCommand command;
@@ -24,7 +23,7 @@ namespace NameGenApp.Models.Repositories
         {
             dataSource = new DataSource();
             connectionString = dataSource.Server + dataSource.Database + dataSource.User + dataSource.Password;
-            mySqlConnection = new MySqlConnection(connectionString);
+            databaseConnection = new MySqlConnection(connectionString);
             queryHandler = new QueryHandler();
         }
 
@@ -33,9 +32,9 @@ namespace NameGenApp.Models.Repositories
             Person person = new Person();
             String query = "SELECT * FROM " + dataSource.TablePersons +" WHERE " + dataSource.PersonId + " = " + personId;
 
-            command = new MySqlCommand(query, mySqlConnection);
+            command = new MySqlCommand(query, databaseConnection);
 
-            mySqlConnection.Open();
+            databaseConnection.Open();
             dataReader = command.ExecuteReader();
 
             while (dataReader.Read())
@@ -43,7 +42,7 @@ namespace NameGenApp.Models.Repositories
                 person = queryHandler.GetPersonFromDataReader(dataReader, dataSource);
             }
 
-            mySqlConnection.Close();
+            databaseConnection.Close();
 
             return person;
 

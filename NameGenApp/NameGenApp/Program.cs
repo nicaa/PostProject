@@ -23,7 +23,6 @@ namespace NameGenApp
 
             PackageRepository packageRepository = new PackageRepository();
             List<Package> packagesList = packageRepository.GetAllPackages();
-            //ArrayList packages = new ArrayList(packagesList);
 
             foreach (Package package in packagesList)
             {
