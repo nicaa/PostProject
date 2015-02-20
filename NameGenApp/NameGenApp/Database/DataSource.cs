@@ -8,21 +8,15 @@ namespace NameGenApp.Database
 {
     public class DataSource
     {
-<<<<<<< HEAD
-        public readonly String SERVER = "server=localhost;";
-        public readonly String DATABASE = "database=test;";
-        public readonly String USER = "user=root;";
-        public readonly String PASSWORD = "password=1234";
-
-        public readonly String packageId = "packageId";
-        public readonly String packageSender = "sender";
-        
-=======
-        // Database 
+        // Database
         private readonly String SERVER = "server=localhost;";
         private readonly String DATABASE = "database=test;";
         private readonly String USER = "user=root;";
-        private readonly String PASSWORD = "password=1234;";
+        private readonly String PASSWORD = "password=1234";
+
+        private readonly String packageId = "packageId";
+        private readonly String packageSender = "sender";
+        
 
         // Tables
         private readonly String TABLE_PERSONS = "person";
@@ -116,6 +110,5 @@ namespace NameGenApp.Database
         {
             get { return LAST_NAME; }
         }
->>>>>>> origin/master
     }
 }
