@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POSTWebService.Services.POSTPackage" CodeBehind="POSTPackage.svc.cs" %>

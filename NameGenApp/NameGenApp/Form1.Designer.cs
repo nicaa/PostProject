@@ -38,6 +38,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.IDText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -128,11 +129,22 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "ID:";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(60, 337);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 425);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.IDText);
             this.Controls.Add(this.button4);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox IDText;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button5;
 
     }
 }
