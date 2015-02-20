@@ -27,7 +27,7 @@ namespace NameGenApp
 
             foreach (Package package in packagesList)
             {
-                Console.WriteLine(package.packageId);
+                package.PrintPackage();
             }
         }
     }

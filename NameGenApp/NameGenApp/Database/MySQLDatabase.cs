@@ -15,7 +15,7 @@ namespace NameGenApp.Database
         public MySQLDatabase()
         {
             dataSource = new DataSource();
-            connectionString = dataSource.SERVER + dataSource.DATABASE + dataSource.USER + dataSource.PASSWORD;
+            connectionString = dataSource.Server + dataSource.Database + dataSource.User + dataSource.Password;
             con = new MySqlConnection(connectionString);
         }
 

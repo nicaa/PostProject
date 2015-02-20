@@ -26,7 +26,7 @@ namespace NameGenApp.Models.Repositories
         {
             database = new MySQLDatabase();
             dataSource = new DataSource();
-            connectionString = dataSource.SERVER + dataSource.DATABASE + dataSource.USER + dataSource.PASSWORD;
+            connectionString = dataSource.Server + dataSource.Database + dataSource.User + dataSource.Password;
             mySqlConnection = new MySqlConnection(connectionString);
             queryHandler = new QueryHandler();
             _personRepository = new PersonRepository();
@@ -35,7 +35,7 @@ namespace NameGenApp.Models.Repositories
         public List<Package> GetAllPackages()
         {
             List<Package> packages = new List<Package>();
-            String query = "SELECT * FROM packages";
+            String query = "SELECT * FROM " + dataSource.TablePackages;
 
             command = new MySqlCommand(query, mySqlConnection);
             mySqlConnection.Open();
@@ -43,7 +43,7 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                Package package = queryHandler.ExtractPackageFromDataReader(dataReader);
+                Package package = queryHandler.ExtractPackageFromDataReader(dataReader, dataSource);
                 packages.Add(package);
             }
 
@@ -56,7 +56,7 @@ namespace NameGenApp.Models.Repositories
         public Package GetPackage(int packageId)
         {
             Package package = new Package();
-            String query = "SELECT * FROM packages WHERE packageId = " + packageId;
+            String query = "SELECT * FROM " + dataSource.TablePackages +" WHERE " + dataSource.PackageId + " = " + packageId;
             command = new MySqlCommand(query, mySqlConnection);
             
             mySqlConnection.Open();
@@ -65,7 +65,7 @@ namespace NameGenApp.Models.Repositories
 
             while (dataReader.Read())
             {
-                queryHandler.ExtractPackageFromDataReader(dataReader);
+                queryHandler.ExtractPackageFromDataReader(dataReader, dataSource);
             }
 
             return package;
