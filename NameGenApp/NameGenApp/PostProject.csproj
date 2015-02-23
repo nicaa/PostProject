@@ -120,6 +120,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TextFile\Postal.txt" />
+    <Content Include="TextFile\Street.txt" />
     <None Include="Service References\PackageServices\PackageServices.disco" />
     <None Include="Service References\PackageServices\configuration91.svcinfo" />
     <None Include="Service References\PackageServices\configuration.svcinfo" />
@@ -127,6 +129,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="TextFile\City.txt" />
+    <Content Include="TextFile\fName.txt" />
+    <Content Include="TextFile\lName.txt" />
     <Content Include="TextFile\Navne- 5163.txt" />
   </ItemGroup>
   <ItemGroup>

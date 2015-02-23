@@ -39,6 +39,7 @@
             this.IDText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.GenRandomButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -131,7 +132,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(60, 337);
+            this.button5.Location = new System.Drawing.Point(12, 91);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 11;
@@ -139,11 +140,22 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // GenRandomButton
+            // 
+            this.GenRandomButton.Location = new System.Drawing.Point(130, 304);
+            this.GenRandomButton.Name = "GenRandomButton";
+            this.GenRandomButton.Size = new System.Drawing.Size(75, 23);
+            this.GenRandomButton.TabIndex = 12;
+            this.GenRandomButton.Text = "GenRandom";
+            this.GenRandomButton.UseVisualStyleBackColor = true;
+            this.GenRandomButton.Click += new System.EventHandler(this.GenRandomButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 425);
+            this.Controls.Add(this.GenRandomButton);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.IDText);
@@ -175,6 +187,7 @@
         private System.Windows.Forms.TextBox IDText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button GenRandomButton;
 
     }
 }

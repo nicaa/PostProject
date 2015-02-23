@@ -8,12 +8,12 @@ namespace NameGenApp.Models
 {
     public class Package
     {
-        public int packageId;
-        public String recipientFirstName;
-        public String recipientLastName;
-        public String destinationStreet;
-        public String destinationCity;
-        public String destinationPostalCode;
+        public int packageId { get; set; }
+        public String recipientFirstName { get; set; }
+        public String recipientLastName { get; set; }
+        public String destinationStreet { get; set; }
+        public String destinationCity { get; set; }
+        public String destinationPostalCode { get; set; }
 
         public void PrintPackage()
         {
