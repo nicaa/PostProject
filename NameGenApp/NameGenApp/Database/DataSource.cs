@@ -24,17 +24,11 @@ namespace NameGenApp.Database
 
         // Package table columns
         private readonly String PACKAGE_ID = "packageId";
-        private readonly String SENDER_ID = "senderId";
-        private readonly String RECIPIENT_ID = "recipientId";
+        private readonly String FIRST_NAME = "recipientFirstName";
+        private readonly String LAST_NAME = "recipientLastName";
         private readonly String DESTINATION_STREET = "destinationStreet";
         private readonly String DESTINATION_CITY = "destinationCity";
         private readonly String DESTINATION_POSTAL_CODE = "destinationPostalCode";
-
-        // Person table columns
-        private readonly String PERSON_ID = "personId";
-        private readonly String FIRST_NAME = "fName";
-        private readonly String LAST_NAME = "lName";
-
 
         public string Server
         {

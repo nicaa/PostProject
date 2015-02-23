@@ -17,7 +17,6 @@ namespace NameGenApp.Models.Repositories
         private MySqlDataReader dataReader;
 
         private String connectionString;
-        private IPersonRepository _personRepository;
 
         private QueryHandler queryHandler;
 
@@ -27,7 +26,6 @@ namespace NameGenApp.Models.Repositories
             connectionString = dataSource.Server + dataSource.Database + dataSource.User + dataSource.Password;
             databaseConnection = new MySqlConnection(connectionString);
             queryHandler = new QueryHandler();
-            _personRepository = new PersonRepository();
         }
 
         public List<Package> GetAllPackages()

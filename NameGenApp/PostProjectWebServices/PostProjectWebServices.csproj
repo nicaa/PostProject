@@ -71,9 +71,7 @@
     <Compile Include="Database\QueryHandler.cs" />
     <Compile Include="IPackageServices.cs" />
     <Compile Include="Models\Package.cs" />
-    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Repositories\PackageRepository.cs" />
-    <Compile Include="Models\Repositories\PersonRepository.cs" />
     <Compile Include="PackageServices.svc.cs">
       <DependentUpon>PackageServices.svc</DependentUpon>
     </Compile>
