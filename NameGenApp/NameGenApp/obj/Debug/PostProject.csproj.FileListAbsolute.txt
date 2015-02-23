@@ -9,3 +9,6 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\Nam
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.pdb
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\Moq.dll
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\Moq.xml
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.exe.config
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.pdb
