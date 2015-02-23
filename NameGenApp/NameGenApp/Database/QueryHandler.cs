@@ -11,16 +11,19 @@ namespace NameGenApp.Database
 {
     public class QueryHandler
     {
-        public Package ExtractPackageFromDataReader(MySqlDataReader dataReader)
+        public Package ExtractPackageFromDataReader(MySqlDataReader dataReader, DataSource dataSource)
         {
-            Package package = new Package();
+            Package package = new Package(); // optimize when testing
             Person sender = new Person();
             Person recipient = new Person();
             IPersonRepository _personRepository = new PersonRepository();
 
-            package.packageId = Convert.ToInt32(dataReader[0]);
-            var senderId = Convert.ToInt32(dataReader[1]);
-            var recipientId = Convert.ToInt32(dataReader[2]);
+            package.packageId = Convert.ToInt32(dataReader[dataSource.PackageId]);
+            var senderId = Convert.ToInt32(dataReader[dataSource.SenderId]);
+            var recipientId = Convert.ToInt32(dataReader[dataSource.RecipientId]);
+            package.destinationStreet = dataReader[dataSource.DestinationStreet].ToString();
+            package.destinationCity = dataReader[dataSource.DestinationCity].ToString();
+            package.destinationPostalCode = dataReader[dataSource.DestinationPostalCode].ToString();
 
             package.sender = _personRepository.GetPerson(senderId);
             package.recipient = _personRepository.GetPerson(recipientId);
@@ -28,12 +31,12 @@ namespace NameGenApp.Database
             return package;
         }
 
-        public Person GetPersonFromDataReader(MySqlDataReader dataReader)
+        public Person GetPersonFromDataReader(MySqlDataReader dataReader, DataSource dataSource)
         {
             Person person = new Person();
-            person.id = Convert.ToInt32(dataReader["personId"]);
-            person.fName = dataReader["fName"].ToString();
-            person.lName = dataReader["lName"].ToString();
+            person.id = Convert.ToInt32(dataReader[dataSource.PersonId]);
+            person.fName = dataReader[dataSource.FirstName].ToString();
+            person.lName = dataReader[dataSource.LastName].ToString();
 
             return person;
         }

@@ -1,0 +1,12 @@
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\obj\Debug\POSTWebService.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\POSTWebService.dll.config
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\POSTWebService.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\POSTWebService.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\EntityFramework.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\EntityFramework.SqlServer.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\EntityFramework.xml
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\bin\EntityFramework.SqlServer.xml
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\obj\Debug\POSTWebService.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\obj\Debug\POSTWebService.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\obj\Debug\POSTWebService.Migrations.init.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\POSTWebService\obj\Debug\POSTWebService.csproj.GenerateResource.Cache

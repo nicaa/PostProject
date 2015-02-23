@@ -1,0 +1,5 @@
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\bin\PostProjectWebServices.dll.config
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\bin\PostProjectWebServices.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\bin\PostProjectWebServices.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\obj\Debug\PostProjectWebServices.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\obj\Debug\PostProjectWebServices.pdb

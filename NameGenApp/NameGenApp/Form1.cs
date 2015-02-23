@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NameGenApp.Database;
+using NameGenApp.PackageServices;
 
 namespace NameGenApp
 {
@@ -49,6 +50,12 @@ namespace NameGenApp
         private void button4_Click(object sender, EventArgs e)
         {
             mySqlDB.deleteID(IDText.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            PackageServicesClient packageServices = new PackageServicesClient();
+            packageServices.DoWork();
         }
                    
     }
