@@ -40,6 +40,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -64,7 +66,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DataSource.cs" />
+    <Compile Include="Database\MySQLDatabase.cs" />
+    <Compile Include="Database\QueryHandler.cs" />
     <Compile Include="IPackageServices.cs" />
+    <Compile Include="Models\Package.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Repositories\PackageRepository.cs" />
+    <Compile Include="Models\Repositories\PersonRepository.cs" />
     <Compile Include="PackageServices.svc.cs">
       <DependentUpon>PackageServices.svc</DependentUpon>
     </Compile>
