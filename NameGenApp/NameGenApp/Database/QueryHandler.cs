@@ -18,9 +18,9 @@ namespace NameGenApp.Database
             package.packageId = Convert.ToInt32(dataReader[dataSource.PackageId]);
             package.recipientFirstName = dataReader[dataSource.RecipientFirstName].ToString();
             package.recipientLastName = dataReader[dataSource.RecipientLastName].ToString();
-            package.destinationStreet = dataReader[dataSource.DestinationStreet].ToString();
-            package.destinationCity = dataReader[dataSource.DestinationCity].ToString();
-            package.destinationPostalCode = dataReader[dataSource.DestinationPostalCode].ToString();
+            package.destinationStreet = dataReader[dataSource.RecipientStreet].ToString();
+            package.destinationCity = dataReader[dataSource.RecipientCity].ToString();
+            package.destinationPostalCode = dataReader[dataSource.RecipientPostalCode].ToString();
 
             return package;
         }

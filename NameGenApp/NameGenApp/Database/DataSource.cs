@@ -26,9 +26,9 @@ namespace NameGenApp.Database
         private readonly String PACKAGE_ID = "packageId";
         private readonly String RECIPIENT_FIRST_NAME = "recipientFirstName";
         private readonly String RECIPIENT_LAST_NAME = "recipientLastName";
-        private readonly String DESTINATION_STREET = "destinationStreet";
-        private readonly String DESTINATION_CITY = "destinationCity";
-        private readonly String DESTINATION_POSTAL_CODE = "destinationPostalCode";
+        private readonly String RECIPIENT_STREET = "recipientStreet";
+        private readonly String RECIPIENT_CITY = "recipientCity";
+        private readonly String RECIPIENT_POSTAL_CODE = "recipientPostalCode";
 
         public string Server
         {
@@ -65,21 +65,6 @@ namespace NameGenApp.Database
             get { return PACKAGE_ID; }
         }
 
-        public string DestinationStreet
-        {
-            get { return DESTINATION_STREET; }
-        }
-
-        public string DestinationCity
-        {
-            get { return DESTINATION_CITY; }
-        }
-
-        public string DestinationPostalCode
-        {
-            get { return DESTINATION_POSTAL_CODE; }
-        }
-
         public string RecipientFirstName
         {
             get { return RECIPIENT_FIRST_NAME; }
@@ -88,6 +73,21 @@ namespace NameGenApp.Database
         public string RecipientLastName
         {
             get { return RECIPIENT_LAST_NAME; }
+        }
+
+        public string RecipientStreet
+        {
+            get { return RECIPIENT_STREET; }
+        }
+
+        public string RecipientCity
+        {
+            get { return RECIPIENT_CITY; }
+        }
+
+        public string RecipientPostalCode
+        {
+            get { return RECIPIENT_POSTAL_CODE; }
         }
     }
 }

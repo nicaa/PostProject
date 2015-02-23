@@ -75,9 +75,9 @@ namespace NameGenApp.Models.Repositories
         public void CreatePackage(Package package)
         {
             String query = "INSERT into " + dataSource.TablePackages + " (" 
-                + dataSource.DestinationStreet + ", " 
-                + dataSource.Database + ", " 
-                + dataSource.DestinationPostalCode + ")" +
+                + dataSource.RecipientStreet + ", " 
+                + dataSource.RecipientCity + ", " 
+                + dataSource.RecipientPostalCode + ")" +
                 " VALUES('" 
                 + package.destinationStreet + "', " 
                 + package.destinationCity + "' '" 
