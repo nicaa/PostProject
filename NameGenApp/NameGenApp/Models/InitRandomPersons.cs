@@ -35,7 +35,7 @@ namespace NameGenApp.Models
             }
             Console.WriteLine(list.Count);
         }
-
+        /*
         public void addRandomToDb()
         {
             for (int i = 1; i <= 1; i++)
@@ -48,7 +48,7 @@ namespace NameGenApp.Models
 
                 Console.WriteLine(person.fName + " " + person.lName);
             }
-        }
+        }*/
 
     }
 }

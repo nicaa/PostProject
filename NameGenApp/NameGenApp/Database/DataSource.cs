@@ -12,7 +12,7 @@ namespace NameGenApp.Database
         private readonly String SERVER = "server=localhost;";
         private readonly String DATABASE = "database=test;";
         private readonly String USER = "user=root;";
-        private readonly String PASSWORD = "password=123";
+        private readonly String PASSWORD = "password=1234";
 
         private readonly String packageId = "packageId";
         private readonly String packageSender = "sender";
@@ -24,8 +24,8 @@ namespace NameGenApp.Database
 
         // Package table columns
         private readonly String PACKAGE_ID = "packageId";
-        private readonly String FIRST_NAME = "recipientFirstName";
-        private readonly String LAST_NAME = "recipientLastName";
+        private readonly String RECIPIENT_FIRST_NAME = "recipientFirstName";
+        private readonly String RECIPIENT_LAST_NAME = "recipientLastName";
         private readonly String DESTINATION_STREET = "destinationStreet";
         private readonly String DESTINATION_CITY = "destinationCity";
         private readonly String DESTINATION_POSTAL_CODE = "destinationPostalCode";
@@ -65,16 +65,6 @@ namespace NameGenApp.Database
             get { return PACKAGE_ID; }
         }
 
-        public string SenderId
-        {
-            get { return SENDER_ID; }
-        }
-
-        public string RecipientId
-        {
-            get { return RECIPIENT_ID; }
-        }
-
         public string DestinationStreet
         {
             get { return DESTINATION_STREET; }
@@ -90,19 +80,14 @@ namespace NameGenApp.Database
             get { return DESTINATION_POSTAL_CODE; }
         }
 
-        public string PersonId
+        public string RecipientFirstName
         {
-            get { return PERSON_ID; }
+            get { return RECIPIENT_FIRST_NAME; }
         }
 
-        public string FirstName
+        public string RecipientLastName
         {
-            get { return FIRST_NAME; }
-        }
-
-        public string LastName
-        {
-            get { return LAST_NAME; }
+            get { return RECIPIENT_LAST_NAME; }
         }
     }
 }

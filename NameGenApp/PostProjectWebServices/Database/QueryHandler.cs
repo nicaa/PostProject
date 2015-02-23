@@ -13,7 +13,7 @@ namespace PostProjectWebServices.Database
 
             package.packageId = Convert.ToInt32(dataReader[dataSource.PackageId]);
             package.recipientFirstName = dataReader[dataSource.FirstName].ToString();
-            var recipientId = Convert.ToInt32(dataReader[dataSource.RecipientId]);
+            package.recipientLastName = dataReader[dataSource.LastName].ToString();
             package.destinationStreet = dataReader[dataSource.DestinationStreet].ToString();
             package.destinationCity = dataReader[dataSource.DestinationCity].ToString();
             package.destinationPostalCode = dataReader[dataSource.DestinationPostalCode].ToString();
