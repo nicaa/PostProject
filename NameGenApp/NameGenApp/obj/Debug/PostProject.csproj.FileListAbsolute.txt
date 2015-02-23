@@ -20,3 +20,5 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\Nam
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\PostProject.csproj.GenerateResource.Cache
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\PostProject.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.FindPackageForm.resources
