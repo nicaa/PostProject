@@ -16,7 +16,7 @@ namespace NameGenApp
 {
     public partial class Form1 : Form
     {
-       // InitRandomPersons randomPerson = new InitRandomPersons();
+       
         MySQLDatabase mySqlDB = new MySQLDatabase();
        
         public Form1()
@@ -33,6 +33,11 @@ namespace NameGenApp
         {
             this.Hide();
             new FindPackageForm().Show();
+        }
+
+        private void GenRandomButton_Click(object sender, EventArgs e)
+        {
+            InitRandomPersons randomPerson = new InitRandomPersons();
         }
                    
     }
