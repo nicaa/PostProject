@@ -24,37 +24,15 @@ namespace NameGenApp
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-           // randomPerson.addRandomToDb(db);
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            mySqlDB.SelectAll();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            mySqlDB.insertRasmus(fName.Text,lName.Text);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            mySqlDB.deleteID(IDText.Text);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            PackageServicesClient packageServices = new PackageServicesClient();
-            packageServices.DoWork();
+            new FindPackageForm().ShowDialog();
         }
 
         private void GenRandomButton_Click(object sender, EventArgs e)

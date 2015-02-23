@@ -71,6 +71,12 @@
     <Compile Include="Database\DataSource.cs" />
     <Compile Include="Database\MySQLDatabase.cs" />
     <Compile Include="Database\QueryHandler.cs" />
+    <Compile Include="FindPackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindPackageForm.Designer.cs">
+      <DependentUpon>FindPackageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FindPackageForm.resx">
+      <DependentUpon>FindPackageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
