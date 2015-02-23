@@ -7,14 +7,3 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Deb
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.csprojResolveAssemblyReference.cache
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.dll
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.pdb
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\PostProjectTests.dll.config
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\PostProjectTests.dll
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\PostProjectTests.pdb
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\Moq.dll
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\MySql.Data.dll
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\NameGenApp.exe
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\NameGenApp.pdb
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\bin\Debug\Moq.xml
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.csprojResolveAssemblyReference.cache
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.dll
-C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\PostProjectTests\obj\Debug\PostProjectTests.pdb
