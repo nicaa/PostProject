@@ -12,7 +12,7 @@ namespace PostProjectWebServices.Database
 
         private readonly String packageId = "packageId";
         private readonly String packageSender = "sender";
-        
+
 
         // Tables
         private readonly String TABLE_PERSONS = "person";
@@ -20,17 +20,11 @@ namespace PostProjectWebServices.Database
 
         // Package table columns
         private readonly String PACKAGE_ID = "packageId";
-        private readonly String SENDER_ID = "senderId";
-        private readonly String RECIPIENT_ID = "recipientId";
-        private readonly String DESTINATION_STREET = "destinationStreet";
-        private readonly String DESTINATION_CITY = "destinationCity";
-        private readonly String DESTINATION_POSTAL_CODE = "destinationPostalCode";
-
-        // Person table columns
-        private readonly String PERSON_ID = "personId";
-        private readonly String FIRST_NAME = "fName";
-        private readonly String LAST_NAME = "lName";
-
+        private readonly String RECIPIENT_FIRST_NAME = "recipientFirstName";
+        private readonly String RECIPIENT_LAST_NAME = "recipientLastName";
+        private readonly String RECIPIENT_STREET = "recipientStreet";
+        private readonly String RECIPIENT_CITY = "recipientCity";
+        private readonly String RECIPIENT_POSTAL_CODE = "recipientPostalCode";
 
         public string Server
         {
@@ -67,44 +61,29 @@ namespace PostProjectWebServices.Database
             get { return PACKAGE_ID; }
         }
 
-        public string SenderId
+        public string RecipientFirstName
         {
-            get { return SENDER_ID; }
+            get { return RECIPIENT_FIRST_NAME; }
         }
 
-        public string RecipientId
+        public string RecipientLastName
         {
-            get { return RECIPIENT_ID; }
+            get { return RECIPIENT_LAST_NAME; }
         }
 
-        public string DestinationStreet
+        public string RecipientStreet
         {
-            get { return DESTINATION_STREET; }
+            get { return RECIPIENT_STREET; }
         }
 
-        public string DestinationCity
+        public string RecipientCity
         {
-            get { return DESTINATION_CITY; }
+            get { return RECIPIENT_CITY; }
         }
 
-        public string DestinationPostalCode
+        public string RecipientPostalCode
         {
-            get { return DESTINATION_POSTAL_CODE; }
-        }
-
-        public string PersonId
-        {
-            get { return PERSON_ID; }
-        }
-
-        public string FirstName
-        {
-            get { return FIRST_NAME; }
-        }
-
-        public string LastName
-        {
-            get { return LAST_NAME; }
+            get { return RECIPIENT_POSTAL_CODE; }
         }
     }
 }

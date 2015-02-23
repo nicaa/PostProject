@@ -9,6 +9,7 @@ namespace PostProjectWebServices.Models.Repositories
 {
     public class PackageRepository : IPackageRepository
     {
+
         private DataSource dataSource;
         private MySqlConnection databaseConnection;
         private MySqlCommand command;
@@ -50,9 +51,9 @@ namespace PostProjectWebServices.Models.Repositories
         public Package GetPackage(int packageId)
         {
             Package package = new Package();
-            String query = "SELECT * FROM " + dataSource.TablePackages +" WHERE " + dataSource.PackageId + " = " + packageId;
+            String query = "SELECT * FROM " + dataSource.TablePackages + " WHERE " + dataSource.PackageId + " = " + packageId;
             command = new MySqlCommand(query, databaseConnection);
-            
+
             databaseConnection.Open();
             dataReader = command.ExecuteReader();
             databaseConnection.Close();
@@ -72,13 +73,13 @@ namespace PostProjectWebServices.Models.Repositories
 
         public void CreatePackage(Package package)
         {
-            String query = "INSERT into " + dataSource.TablePackages + " (" 
-                + dataSource.DestinationStreet + ", " 
-                + dataSource.Database + ", " 
-                + dataSource.DestinationPostalCode + ")" +
-                " VALUES('" 
-                + package.destinationStreet + "', " 
-                + package.destinationCity + "' '" 
+            String query = "INSERT into " + dataSource.TablePackages + " ("
+                + dataSource.RecipientStreet + ", "
+                + dataSource.RecipientCity + ", "
+                + dataSource.RecipientPostalCode + ")" +
+                " VALUES('"
+                + package.destinationStreet + "', "
+                + package.destinationCity + "' '"
                 + package.destinationPostalCode + "')";
         }
     }
@@ -89,5 +90,6 @@ namespace PostProjectWebServices.Models.Repositories
         Package GetPackage(int packageId);
         Package SendPackage(int packageId);
         void CreatePackage(Package package);
+
     }
 }
