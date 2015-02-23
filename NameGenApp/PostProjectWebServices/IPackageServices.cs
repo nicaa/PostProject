@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using PostProjectWebServices.Models;
 
 namespace PostProjectWebServices
 {
@@ -13,5 +14,8 @@ namespace PostProjectWebServices
     {
         [OperationContract]
         void DoWork();
+
+        [OperationContract]
+        Package GetPackage(int packageId);
     }
 }

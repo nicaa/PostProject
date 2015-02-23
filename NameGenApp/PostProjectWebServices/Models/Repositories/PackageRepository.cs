@@ -78,9 +78,9 @@ namespace PostProjectWebServices.Models.Repositories
                 + dataSource.RecipientCity + ", "
                 + dataSource.RecipientPostalCode + ")" +
                 " VALUES('"
-                + package.destinationStreet + "', "
-                + package.destinationCity + "' '"
-                + package.destinationPostalCode + "')";
+                + package.recipientStreet + "', "
+                + package.recipientCity + "' '"
+                + package.recipientPostalCode + "')";
         }
     }
 

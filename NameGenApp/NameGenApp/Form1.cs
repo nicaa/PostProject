@@ -31,8 +31,8 @@ namespace NameGenApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            new FindPackageForm().ShowDialog();
+            this.Hide();
+            new FindPackageForm().Show();
         }
                    
     }

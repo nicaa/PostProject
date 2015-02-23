@@ -24,6 +24,8 @@
   <Metadata>
     <MetadataFile FileName="PackageServices.disco" MetadataType="Disco" ID="64218128-489f-4932-938f-ff17fb121461" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?disco" />
     <MetadataFile FileName="PackageServices.xsd" MetadataType="Schema" ID="9fe17dd3-423f-4662-a43c-3b0f95d3f8b9" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="PackageServices1.xsd" MetadataType="Schema" ID="1829b245-d1e3-4936-b818-db0fc23d8c20" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="PackageServices11.xsd" MetadataType="Schema" ID="690c40f2-b92e-464a-bde3-7aa38e9676e0" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd2" />
     <MetadataFile FileName="PackageServices.wsdl" MetadataType="Wsdl" ID="7d6b7efc-99e3-4c5e-b2ae-392dc6cd3fba" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?wsdl" />
   </Metadata>
   <Extensions>

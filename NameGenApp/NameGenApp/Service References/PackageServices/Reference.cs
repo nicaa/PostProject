@@ -9,7 +9,134 @@
 //------------------------------------------------------------------------------
 
 namespace NameGenApp.PackageServices {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Package", Namespace="http://schemas.datacontract.org/2004/07/PostProjectWebServices.Models")]
+    [System.SerializableAttribute()]
+    public partial class Package : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string destinationCityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string destinationPostalCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string destinationStreetField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int packageIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string recipientFirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string recipientLastNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string destinationCity {
+            get {
+                return this.destinationCityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.destinationCityField, value) != true)) {
+                    this.destinationCityField = value;
+                    this.RaisePropertyChanged("destinationCity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string destinationPostalCode {
+            get {
+                return this.destinationPostalCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.destinationPostalCodeField, value) != true)) {
+                    this.destinationPostalCodeField = value;
+                    this.RaisePropertyChanged("destinationPostalCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string destinationStreet {
+            get {
+                return this.destinationStreetField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.destinationStreetField, value) != true)) {
+                    this.destinationStreetField = value;
+                    this.RaisePropertyChanged("destinationStreet");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int packageId {
+            get {
+                return this.packageIdField;
+            }
+            set {
+                if ((this.packageIdField.Equals(value) != true)) {
+                    this.packageIdField = value;
+                    this.RaisePropertyChanged("packageId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string recipientFirstName {
+            get {
+                return this.recipientFirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.recipientFirstNameField, value) != true)) {
+                    this.recipientFirstNameField = value;
+                    this.RaisePropertyChanged("recipientFirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string recipientLastName {
+            get {
+                return this.recipientLastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.recipientLastNameField, value) != true)) {
+                    this.recipientLastNameField = value;
+                    this.RaisePropertyChanged("recipientLastName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PackageServices.IPackageServices")]
@@ -20,6 +147,12 @@ namespace NameGenApp.PackageServices {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/DoWork", ReplyAction="http://tempuri.org/IPackageServices/DoWorkResponse")]
         System.Threading.Tasks.Task DoWorkAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/GetPackage", ReplyAction="http://tempuri.org/IPackageServices/GetPackageResponse")]
+        NameGenApp.PackageServices.Package GetPackage(int packageId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/GetPackage", ReplyAction="http://tempuri.org/IPackageServices/GetPackageResponse")]
+        System.Threading.Tasks.Task<NameGenApp.PackageServices.Package> GetPackageAsync(int packageId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +188,14 @@ namespace NameGenApp.PackageServices {
         
         public System.Threading.Tasks.Task DoWorkAsync() {
             return base.Channel.DoWorkAsync();
+        }
+        
+        public NameGenApp.PackageServices.Package GetPackage(int packageId) {
+            return base.Channel.GetPackage(packageId);
+        }
+        
+        public System.Threading.Tasks.Task<NameGenApp.PackageServices.Package> GetPackageAsync(int packageId) {
+            return base.Channel.GetPackageAsync(packageId);
         }
     }
 }

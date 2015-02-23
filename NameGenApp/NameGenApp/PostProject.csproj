@@ -118,6 +118,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\PackageServices\NameGenApp.PackageServices.Package.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\PackageServices\PackageServices.wsdl" />
     <None Include="Service References\PackageServices\PackageServices.xsd">
       <SubType>Designer</SubType>
@@ -132,6 +135,12 @@
     <None Include="Service References\PackageServices\PackageServices.disco" />
     <None Include="Service References\PackageServices\configuration91.svcinfo" />
     <None Include="Service References\PackageServices\configuration.svcinfo" />
+    <None Include="Service References\PackageServices\PackageServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PackageServices\PackageServices11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\PackageServices\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

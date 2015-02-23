@@ -10,16 +10,16 @@ namespace PostProjectWebServices.Models
         public int packageId;
         public String recipientFirstName;
         public String recipientLastName;
-        public String destinationStreet;
-        public String destinationCity;
-        public String destinationPostalCode;
+        public String recipientStreet;
+        public String recipientCity;
+        public String recipientPostalCode;
 
         public void PrintPackage()
         {
             Console.WriteLine();
             Console.WriteLine(packageId);
-            Console.WriteLine(destinationStreet);
-            Console.WriteLine(destinationCity + " " + destinationPostalCode);
+            Console.WriteLine(recipientStreet);
+            Console.WriteLine(recipientCity + " " + recipientPostalCode);
             Console.WriteLine(recipientFirstName + " " + recipientLastName);
         }
     }

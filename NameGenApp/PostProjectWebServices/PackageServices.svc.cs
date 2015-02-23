@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using PostProjectWebServices.Models;
+using PostProjectWebServices.Models.Repositories;
 
 namespace PostProjectWebServices
 {
@@ -11,9 +13,16 @@ namespace PostProjectWebServices
     // NOTE: In order to launch WCF Test Client for testing this service, please select PackageServices.svc or PackageServices.svc.cs at the Solution Explorer and start debugging.
     public class PackageServices : IPackageServices
     {
+        private IPackageRepository _packageRepository = new PackageRepository();
         public void DoWork()
         {
             System.Diagnostics.Debug.WriteLine("Hello din service consumer!");
+        }
+
+        public Package GetPackage(int packageId)
+        {
+            Package package = _packageRepository.GetPackage(packageId);
+            return package;
         }
     }
 }
