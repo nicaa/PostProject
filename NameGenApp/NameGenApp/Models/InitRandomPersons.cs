@@ -14,12 +14,13 @@ namespace NameGenApp.Models
         int count = 0;
         ArrayList list = new ArrayList();
         Random ran = new Random();
+        StreamReader reader = new StreamReader("...\\...\\TextFile\\Navne- 5163.txt");
         
         public InitRandomPersons(){
             initPersons();
         }
 
-        StreamReader reader = new StreamReader("...\\...\\TextFile\\Navne- 5163.txt");
+        
 
  
         
