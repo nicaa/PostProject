@@ -24,5 +24,19 @@ namespace PostProjectWebServices
             Package package = _packageRepository.GetPackage(packageId);
             return package;
         }
+
+        public void CreatePackage(string firstName, string lastName, string street, string city, string postalCode)
+        {
+            Package package = new Package();
+            package.recipientFirstName = firstName;
+            package.recipientLastName = lastName;
+            package.recipientStreet = street;
+            package.recipientCity = city;
+            package.recipientPostalCode = postalCode;
+
+            _packageRepository.CreatePackage(package);
+            System.Diagnostics.Debug.WriteLine("Hello din service consumer SPLATSKID!");
+        }
+
     }
 }

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NameGenApp.PackageServices;
+using NameGenApp.PackagesServiceReference;
+using PostProjectWebServices.Models;
 
 namespace NameGenApp
 {
@@ -42,7 +43,13 @@ namespace NameGenApp
         {
             int id = Convert.ToInt32(packageIdTextBox.Text);
             PackageServicesClient packageServicesClient = new PackageServicesClient();
-            packageServicesClient.GetPackage(id);
+            Package package = packageServicesClient.GetPackage(id);
+
+            firstNameTextBox.Text = package.recipientFirstName;
+            lastNameTextBox.Text = package.recipientLastName;
+            streetTextBox.Text = package.recipientStreet;
+            cityTextBox.Text = package.recipientCity;
+            postalCodeTextBox.Text = package.recipientPostalCode;
         }
     }
 }

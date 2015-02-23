@@ -17,5 +17,8 @@ namespace PostProjectWebServices
 
         [OperationContract]
         Package GetPackage(int packageId);
+
+        [OperationContract]
+        void CreatePackage(String firstName, String lastName, String street, String city, String postalCode);
     }
 }

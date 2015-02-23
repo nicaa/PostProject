@@ -56,12 +56,13 @@ namespace PostProjectWebServices.Models.Repositories
 
             databaseConnection.Open();
             dataReader = command.ExecuteReader();
-            databaseConnection.Close();
 
             while (dataReader.Read())
             {
-                queryHandler.ExtractPackageFromDataReader(dataReader, dataSource);
+                package = queryHandler.ExtractPackageFromDataReader(dataReader, dataSource);
             }
+
+            databaseConnection.Close();
 
             return package;
         }
@@ -73,14 +74,12 @@ namespace PostProjectWebServices.Models.Repositories
 
         public void CreatePackage(Package package)
         {
-            String query = "INSERT into " + dataSource.TablePackages + " ("
-                + dataSource.RecipientStreet + ", "
-                + dataSource.RecipientCity + ", "
-                + dataSource.RecipientPostalCode + ")" +
-                " VALUES('"
-                + package.recipientStreet + "', "
-                + package.recipientCity + "' '"
-                + package.recipientPostalCode + "')";
+            String query = "insert INTO " + dataSource.TablePackages + " (" + dataSource.RecipientFirstName + ", " + dataSource.RecipientLastName + ", " + dataSource.RecipientStreet + ", " + dataSource.RecipientCity + ", " + dataSource.RecipientPostalCode + ") VALUES('" + package.recipientFirstName + "', '" + package.recipientLastName + "', '" + package.recipientStreet + "', '" + package.recipientCity + "', '" + package.recipientPostalCode + "')";
+            command = new MySqlCommand(query, databaseConnection);
+
+            databaseConnection.Open();
+            command.ExecuteNonQuery();
+            databaseConnection.Close();
         }
     }
 

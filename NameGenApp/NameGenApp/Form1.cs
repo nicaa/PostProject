@@ -1,5 +1,4 @@
 ﻿
-using NameGenApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,14 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NameGenApp.Database;
-using NameGenApp.PackageServices;
+using NameGenApp.PackagesServiceReference;
 
 namespace NameGenApp
 {
     public partial class Form1 : Form
     {
        
-        MySQLDatabase mySqlDB = new MySQLDatabase();
+       
        
         public Form1()
         {
@@ -37,7 +36,15 @@ namespace NameGenApp
 
         private void GenRandomButton_Click(object sender, EventArgs e)
         {
-            InitRandomPersons randomPerson = new InitRandomPersons();
+            //InitRandomPersons randomPerson = new InitRandomPersons();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PackageServicesClient client = new PackageServicesClient();
+            
+            client.CreatePackage("Prut", "Prut", "Snot", "Prut", "Prut");
+            
         }
                    
     }

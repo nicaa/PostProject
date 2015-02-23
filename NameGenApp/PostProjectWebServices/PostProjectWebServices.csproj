@@ -69,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DataSource.cs" />
-    <Compile Include="Database\MySQLDatabase.cs" />
     <Compile Include="Database\QueryHandler.cs" />
     <Compile Include="IPackageServices.cs" />
     <Compile Include="Models\Package.cs" />

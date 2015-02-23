@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NameGenApp.Models;
-using NameGenApp.Models.Repositories;
 
 namespace NameGenApp
 {
@@ -20,14 +19,6 @@ namespace NameGenApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
-            PackageRepository packageRepository = new PackageRepository();
-            List<Package> packagesList = packageRepository.GetAllPackages();
-
-            foreach (Package package in packagesList)
-            {
-                package.PrintPackage();
-            }
         }
     }
 }
