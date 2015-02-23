@@ -3,3 +3,4 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\b
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\bin\PostProjectWebServices.pdb
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\obj\Debug\PostProjectWebServices.dll
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\obj\Debug\PostProjectWebServices.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectWebServices\obj\Debug\PostProjectWebServices.csprojResolveAssemblyReference.cache

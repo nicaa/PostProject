@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using NameGenApp.Models;
-using NameGenApp.Models.Repositories;
+using PostProjectWebServices.Models;
+using PostProjectWebServices.Models.Repositories;
 
-namespace NameGenApp.Database
+namespace PostProjectWebServices.Database
 {
     public class QueryHandler
     {
