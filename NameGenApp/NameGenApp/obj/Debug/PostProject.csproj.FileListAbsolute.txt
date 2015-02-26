@@ -29,3 +29,9 @@ C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\Nam
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.application
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe.manifest
 C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.application
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.exe.manifest
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\NameGenApp.application
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\PostProjectWebServices.dll
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\bin\Debug\PostProjectWebServices.pdb
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.exe.manifest
+C:\Users\Nichlas\Documents\GitHub\PostProject\NameGenApp\NameGenApp\obj\Debug\NameGenApp.application

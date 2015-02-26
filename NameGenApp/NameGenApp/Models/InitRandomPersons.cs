@@ -43,7 +43,7 @@ namespace NameGenApp.Models
 
             // generate packages
             genRandomPackage();
-            printPackages();
+            //printPackages();
         }
 
         public void printPackages()
@@ -61,7 +61,7 @@ namespace NameGenApp.Models
             {
                 list.Add(line);
                 count++;
-                Console.WriteLine(count);
+                //Console.WriteLine(count);
             }
         }
         
@@ -88,14 +88,17 @@ namespace NameGenApp.Models
 
                 packageList.Add(package);
             }
-            Console.WriteLine("Package Count = " + packageList.Count);
+           // Console.WriteLine("Package Count = " + packageList.Count);
         }
 
         //Return package from list!
         public Package getRandomPackage()
         {
-
-            return null;
+            Package package = new Package();
+            int r = ran.Next(0, packageList.Count);
+            package = packageList[r];
+           // Console.WriteLine(package.recipientFirstName + package.recipientLastName + package.recipientPostalCode + package.recipientStreet );
+            return package;
         }
        
         public void initPersons()
