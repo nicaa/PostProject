@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PostProjectWebServices.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PostProjectWebServices.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Package">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="packageId" type="xs:int" />
+      <xs:element minOccurs="0" name="recipientCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recipientFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recipientLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recipientPostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recipientStreet" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Package" nillable="true" type="tns:Package" />
+</xs:schema>

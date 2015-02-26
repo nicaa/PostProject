@@ -64,7 +64,7 @@ namespace NameGenApp.Models
                 Console.WriteLine(count);
             }
         }
-
+        
         // inits packages with abtributes from the lists 
         public void genRandomPackage()
         {
@@ -78,13 +78,13 @@ namespace NameGenApp.Models
                 package.recipientLastName = (String)lNameList[r];
 
                 r = ran.Next(0, streetList.Count);
-                package.destinationStreet = (String)streetList[r];
+                package.recipientStreet = (String)streetList[r];
 
                 r = ran.Next(0, cityList.Count);
-                package.destinationCity = (String)cityList[r];
+                package.recipientCity = (String)cityList[r];
 
                 r = ran.Next(0, postalList.Count);
-                package.destinationPostalCode = (String)postalList[r];
+                package.recipientPostalCode = (String)postalList[r];
 
                 packageList.Add(package);
             }

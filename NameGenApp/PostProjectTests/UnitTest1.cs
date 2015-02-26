@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using NameGenApp.Database;
-using NameGenApp.Models;
-using NameGenApp.Models.Repositories;
+using PostProjectWebServices.Models;
+using PostProjectWebServices.Models.Repositories;
 
 
 namespace PostProjectTests

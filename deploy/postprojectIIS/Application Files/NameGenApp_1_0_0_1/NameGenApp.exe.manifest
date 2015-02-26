@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NameGenApp.exe" version="1.0.0.1" publicKeyToken="acb58c9fa7e5845b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NameGenApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NameGenApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.9.5.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Moq.dll" size="661504">
+      <assemblyIdentity name="Moq" version="4.2.1502.911" publicKeyToken="69F491C39445E920" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lHwDVwNv4sCvcLucvCY72f16Mv/3b992YPnSWDq8mOc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameGenApp.exe" size="22016">
+      <assemblyIdentity name="NameGenApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wNu9fmH+uzFz2TxknXK4HSmlPvkOiPOvTdzuMWDbSfI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PostProjectWebServices.dll" size="10752">
+      <assemblyIdentity name="PostProjectWebServices" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B8fT9YuomRBf/Eo3xOdRTMpKBgZqovMZq+nASm/9EzU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NameGenApp.exe.config" size="2997">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2v6T6kYquS7DEEpQ/hpVH9A+fRi2nrjDt0IVK+OANbo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\City.txt" size="1116">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hJttXvXamatSzX9CQCCsWiKSydfvdbDn3U/m73IC/TU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\fName.txt" size="784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Fhccuco9Vd3hlt+FqWaphavu/b+HvvkuFJV8hhpra14=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\lName.txt" size="790">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QDUWV6d4dpgVCSht9qp/m0dlYj1nAGAxy0TFhsN/9PE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\Navne- 5163.txt" size="41285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EpRhhh3OgBqySY06aq8Nu6eGqjDRvL3jYNHXghZPfhg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\Postal.txt" size="763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b668zem7Ey4/gUnur4e2RKtpHiqYRCBrwJQZ1qI3AAU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TextFile\Street.txt" size="2384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E4x41hjKs4JejnjC1g2rG8XY0FNxvhX7T3kwrSnUyE8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Rasmus-Pc\Rasmus" issuerKeyHash="2bdeb75d57841ecc88f3a880a6af1254c2d7cd16" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9nLWNWa4haeqTCSUaVXBBiIg7LZfYGGXU5e5ii7tSgw=</DigestValue></Reference></SignedInfo><SignatureValue>MW9tlEhGS1R/uhXkAEy7UmefHQ18oJLa1sYAbPy5KSImceL22Xn1pBuc6kmHpyDgTN32h5ctSNWF4rV+wFaP6ZIFCiaTHlXyD3bD3Z4PTldM+QXG4GSzVTwUKfBGsN5uaC9ZnTN1qDur340MVgnqLqA/v0tn1BWvAq2jCfSgYo4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2EteV6GglHAl4HfRjuC1xhvqwY4aDoPJhKMC2CGtqfG/r9Y/hnO+5RLULzJhFECsiHOKgjNvE7I/2pKxwX8df5gcBjBCZDqHJD/5LydswYFwLlLS7fx8tjSYc8IcxxEYOQlkVz7FyvpZW474l8QBGx2ihsKy/LgLiBQ7QlfoUYM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0c4aed2e8ab997539761605fb6ec202206c1556994244caaa785b86635d672f6" Description="" Url=""><as:assemblyIdentity name="NameGenApp.exe" version="1.0.0.1" publicKeyToken="acb58c9fa7e5845b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Rasmus-Pc\Rasmus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wHV8d6jnWiOKdzT595L3mYcXSCVebsdpKdIJwixDaWs=</DigestValue></Reference></SignedInfo><SignatureValue>U55FFNie6QR0O/PztK39ktFfX8OpmAVSnWfrXGziSxjnYbEjQ6GthbpVinAWrEsu6BTVOYyHC35QStUvLAW7PBqgrPM5c3Ghsb0Nbk5uej9zliEe0hbyoPjM+6Ld7rQm1q/cr2now5ZarQ5wqWa5LZVfqQfrkC0rN43FW6cmjK0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2EteV6GglHAl4HfRjuC1xhvqwY4aDoPJhKMC2CGtqfG/r9Y/hnO+5RLULzJhFECsiHOKgjNvE7I/2pKxwX8df5gcBjBCZDqHJD/5LydswYFwLlLS7fx8tjSYc8IcxxEYOQlkVz7FyvpZW474l8QBGx2ihsKy/LgLiBQ7QlfoUYM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQWNOhjtXvI7JOtIcjhff5AjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAUgBhAHMAbQB1AHMALQBQAGMAXABSAGEAcwBtAHUAczAeFw0xNTAyMjYxMDQyMzRaFw0xNjAyMjYxNjQyMzRaMCsxKTAnBgNVBAMeIABSAGEAcwBtAHUAcwAtAFAAYwBcAFIAYQBzAG0AdQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYS15XoaCUcCXgd9GO4LXGG+rBjhoOg8mEowLYIa2p8b+v1j+Gc77lEtQvMmEUQKyIc4qCM28Tsj/akrHBfx1/mBwGMEJkOockP/kvJ2zBgXAuUtLt/Hy2NJhzwhzHERg5CWRXPsXK+llbjviXxAEbHaKGwrL8uAuIFDtCV+hRgwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKkIzBQhyorupwA4SGx/CrNkT1ujx588bRLlXmQTFlX8yA58rpIhjwcBYPZTCvWzObvKGwpgANFqtAZMsJVM+RCgo/Tlm8BNXCyWAZeUgKBuQilUroEZexl3WSuv4OgPbfuymbor8A0N1kAFOqr8ocx/Ahhd55NiZxmuN0yFlN4I</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -11,7 +11,9 @@
     <AssemblyName>NameGenApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <PublishUrl>c:\deploy\postprojectIIS\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,10 +23,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,6 +47,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8679A6217CE21EBADC6393DC9AF8AF353750E8E5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PostProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Moq">
@@ -85,10 +99,14 @@
     </Compile>
     <Compile Include="Models\InitRandomPersons.cs" />
     <Compile Include="Models\Package.cs" />
-    <Compile Include="Models\Repositories\PackageRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\PackageServices\Reference.cs">
+    <Compile Include="Service References\PackagesServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceIIS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -109,6 +127,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="PostProject_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\PostProjectWebServices.Models.Package.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,8 +138,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\PackageServices\PackageServices.wsdl" />
-    <None Include="Service References\PackageServices\PackageServices.xsd">
+    <None Include="Service References\PackagesServiceReference\PackageServices.wsdl" />
+    <None Include="Service References\PackagesServiceReference\PackageServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PackagesServiceReference\PackageServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PackagesServiceReference\PackageServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceIIS\PackageServices.wsdl" />
+    <None Include="Service References\ServiceReferenceIIS\PackageServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceIIS\PackageServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceIIS\PackageServices2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -129,15 +165,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TextFile\Postal.txt" />
-    <Content Include="TextFile\Street.txt" />
-    <None Include="Service References\PackageServices\PackageServices.disco" />
-    <None Include="Service References\PackageServices\configuration91.svcinfo" />
-    <None Include="Service References\PackageServices\configuration.svcinfo" />
-    <None Include="Service References\PackageServices\Reference.svcmap">
+    <None Include="Service References\PackagesServiceReference\PackageServices.disco" />
+    <None Include="Service References\PackagesServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\PackagesServiceReference\configuration.svcinfo" />
+    <None Include="Service References\PackagesServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\ServiceReferenceIIS\PackageServices.disco" />
+    <None Include="Service References\ServiceReferenceIIS\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceIIS\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceIIS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TextFile\Postal.txt" />
+    <Content Include="TextFile\Street.txt" />
     <Content Include="TextFile\City.txt" />
     <Content Include="TextFile\fName.txt" />
     <Content Include="TextFile\lName.txt" />
@@ -161,10 +204,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PostProjectWebServices\PostProjectWebServices.csproj">
+      <Project>{B413CF88-E9CF-42E9-9162-EC1A3B0B5226}</Project>
+      <Name>PostProjectWebServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\PackageServices\" />
+    <WCFMetadataStorage Include="Service References\PackagesServiceReference\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceIIS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -65,6 +65,10 @@
       <Project>{81d6b79f-e7e3-4860-a8c2-eb285262d5f7}</Project>
       <Name>PostProject</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PostProjectWebServices\PostProjectWebServices.csproj">
+      <Project>{B413CF88-E9CF-42E9-9162-EC1A3B0B5226}</Project>
+      <Name>PostProjectWebServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

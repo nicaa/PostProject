@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16416faa-0849-462e-930a-85bb5d02ebac" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6898/PackageServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PackageServices.disco" MetadataType="Disco" ID="9021a154-05a6-499b-a602-67092d4c3258" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?disco" />
+    <MetadataFile FileName="PackageServices.xsd" MetadataType="Schema" ID="d52fda51-3d02-4f00-9c31-cc07736daa32" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="PackageServices1.xsd" MetadataType="Schema" ID="a5535b89-e0e9-4ba3-ae11-c9cb4e70b5aa" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="PackageServices2.xsd" MetadataType="Schema" ID="59db23df-3591-49c4-aff5-3070d88e1192" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="PackageServices.wsdl" MetadataType="Wsdl" ID="5c6e6f9d-aa1f-4a42-a7db-9eac31d54c59" SourceId="1" SourceUrl="http://localhost:6898/PackageServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,7 +1,6 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using PostProjectWebServices.Models;
-using PostProjectWebServices.Models.Repositories;
 
 namespace PostProjectWebServices.Database
 {
@@ -11,12 +10,12 @@ namespace PostProjectWebServices.Database
         {
             Package package = new Package(); // optimize when testing
 
-            package.packageId = Convert.ToInt32(dataReader[dataSource.PackageId]);
-            package.recipientFirstName = dataReader[dataSource.RecipientFirstName].ToString();
-            package.recipientLastName = dataReader[dataSource.RecipientLastName].ToString();
-            package.destinationStreet = dataReader[dataSource.RecipientStreet].ToString();
-            package.destinationCity = dataReader[dataSource.RecipientCity].ToString();
-            package.destinationPostalCode = dataReader[dataSource.RecipientPostalCode].ToString();
+            package.packageId           = Convert.ToInt32(dataReader[dataSource.PackageId]);
+            package.recipientFirstName  = dataReader[dataSource.RecipientFirstName].ToString();
+            package.recipientLastName   = dataReader[dataSource.RecipientLastName].ToString();
+            package.recipientStreet     = dataReader[dataSource.RecipientStreet].ToString();
+            package.recipientCity       = dataReader[dataSource.RecipientCity].ToString();
+            package.recipientPostalCode = dataReader[dataSource.RecipientPostalCode].ToString();
 
             return package;
         }
