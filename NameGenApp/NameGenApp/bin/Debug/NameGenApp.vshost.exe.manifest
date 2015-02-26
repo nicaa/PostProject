@@ -42,11 +42,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="MySql.Data" version="6.9.5.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Moq.dll" size="661504">
       <assemblyIdentity name="Moq" version="4.2.1502.911" publicKeyToken="69F491C39445E920" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -59,14 +54,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameGenApp.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="457216">
+      <assemblyIdentity name="MySql.Data" version="6.9.5.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Hl8oqKVoHKoYBkB+RW44pglVNNEg+FMieB/chRgR6hQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameGenApp.exe" size="22016">
       <assemblyIdentity name="NameGenApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1UkSSYhAoBGDvAP0ZIyyC7bSKgaRzVbjkGAiIw8lFPg=</dsig:DigestValue>
+        <dsig:DigestValue>0qgp0kmfsQ0IvZ2xixmsE5ZH4CivCC5Zgsd3tokQ76U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -82,13 +89,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="NameGenApp.exe.config" size="1781">
+  <file name="NameGenApp.exe.config" size="2997">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NHtktn+YQfYOPkMa0fROeqBO0YgA4ElfpPF0wCRG7gk=</dsig:DigestValue>
+      <dsig:DigestValue>2v6T6kYquS7DEEpQ/hpVH9A+fRi2nrjDt0IVK+OANbo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TextFile\City.txt" size="1116">
