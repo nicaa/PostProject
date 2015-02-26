@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NameGenApp.PackagesServiceReference;
+using NameGenApp.ServiceReferenceIIS;
 using PostProjectWebServices.Models;
 
 namespace NameGenApp
@@ -42,7 +43,8 @@ namespace NameGenApp
         private void button1_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(packageIdTextBox.Text);
-            PackageServicesClient packageServicesClient = new PackageServicesClient();
+            ServiceReferenceIIS.PackageServicesClient packageServicesClient =
+                new ServiceReferenceIIS.PackageServicesClient();
             Package package = packageServicesClient.GetPackage(id);
 
             firstNameTextBox.Text = package.recipientFirstName;
