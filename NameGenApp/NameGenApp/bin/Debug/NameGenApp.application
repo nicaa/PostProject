@@ -7,23 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-<<<<<<< HEAD
     <dependentAssembly dependencyType="install" codebase="NameGenApp.exe.manifest" size="7851">
-      <assemblyIdentity name="NameGenApp.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-=======
-    <dependentAssembly dependencyType="install" codebase="NameGenApp.exe.manifest" size="7465">
       <assemblyIdentity name="NameGenApp.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
->>>>>>> origin/master
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>BJsIyAVHQtd/uruuVBNJB+lo/fcgjK4MpZbZgK2lcgg=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>AoPy05JonnLkak+QdMGmcSjukyo9a2h6mZ+paY8hR5c=</dsig:DigestValue>
->>>>>>> origin/master
+        <dsig:DigestValue>FBMpzByqGiKfa9Vgcj7cmXC4zGsz0Uql8QYBuXAHZxI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -54,7 +54,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="457216">
       <assemblyIdentity name="MySql.Data" version="6.9.5.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -67,21 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameGenApp.exe" size="22016">
-=======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NameGenApp.exe" size="20992">
->>>>>>> origin/master
       <assemblyIdentity name="NameGenApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>0qgp0kmfsQ0IvZ2xixmsE5ZH4CivCC5Zgsd3tokQ76U=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>Dp4akf52yzFIXQ+/bEty2iLgUq9z3PlHsyJsdiP1i1o=</dsig:DigestValue>
->>>>>>> origin/master
+        <dsig:DigestValue>CQw1BMOAVRXwtXCNC5ugu3XaeWoEhqqPLEyvKFLXwl0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -93,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>B8fT9YuomRBf/Eo3xOdRTMpKBgZqovMZq+nASm/9EzU=</dsig:DigestValue>
+        <dsig:DigestValue>OnEAkrzzlzYpHoR399dF+mnJsWrD6lgq5UKBbzs0L18=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
