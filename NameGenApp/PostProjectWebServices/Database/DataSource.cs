@@ -8,7 +8,7 @@ namespace PostProjectWebServices.Database
         private readonly String SERVER = "server=localhost;";
         private readonly String DATABASE = "database=test;";
         private readonly String USER = "user=root;";
-        private readonly String PASSWORD = "password=123";
+        private readonly String PASSWORD = "password=1234";
 
         private readonly String packageId = "packageId";
         private readonly String packageSender = "sender";
