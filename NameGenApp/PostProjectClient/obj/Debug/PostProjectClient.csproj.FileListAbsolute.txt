@@ -1,0 +1,10 @@
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\bin\Debug\PostProjectClient.exe.config
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\bin\Debug\PostProjectClient.exe
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\bin\Debug\PostProjectClient.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.Properties.Resources.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.csproj.GenerateResource.Cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.exe
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.Form1.resources
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\PostProjectClient\obj\Debug\PostProjectClient.FindPackageForm.resources

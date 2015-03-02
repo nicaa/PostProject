@@ -35,7 +35,6 @@ namespace PostProjectWebServices
             package.recipientPostalCode = postalCode;
 
             _packageRepository.CreatePackage(package);
-            System.Diagnostics.Debug.WriteLine("Hello din service consumer SPLATSKID!");
         }
 
     }

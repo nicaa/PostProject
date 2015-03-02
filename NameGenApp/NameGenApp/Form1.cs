@@ -36,20 +36,15 @@ namespace NameGenApp
             new FindPackageForm().Show();
         }
 
-        private void GenRandomButton_Click(object sender, EventArgs e)
-        {
-            //InitRandomPersons randomPerson = new InitRandomPersons();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             PackageServicesClient client = new PackageServicesClient();
             Package newPackage  = package.getRandomPackage();
 
-
             client.CreatePackage(newPackage.recipientFirstName, newPackage.recipientLastName, newPackage.recipientStreet, newPackage.recipientCity, newPackage.recipientPostalCode);
             
-           // client.CreatePackage("Prut", "Prut", "Snot", "Prut", "Prut");
+            client.CreatePackage("Prut", "Prut", "Snot", "Prut", "Prut");
             
         }
                    
