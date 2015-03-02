@@ -24,7 +24,6 @@ namespace PostProjectClient.Models
 
 
         Random ran = new Random();
-        private StreamReader reader;
 
         private StreamReader fNameReader;
         private StreamReader fLameReader;
@@ -42,8 +41,6 @@ namespace PostProjectClient.Models
             postalList = new ArrayList();
 
             ran = new Random();
-
-            reader = new StreamReader("...\\...\\TextFile\\Navne- 5163.txt");
 
             fNameReader = new StreamReader("...\\...\\TextFile\\fName.txt");
             fLameReader = new StreamReader("...\\...\\TextFile\\lName.txt");

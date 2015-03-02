@@ -9,30 +9,45 @@ using PostProjectClient.PackageWebService;
 
 namespace PostProjectClient.Models
 {
-    class PackageGenerator
+    public class PackageGenerator
     {
         String line;
         int count = 0;
 
-        public List<Package> packageList = new List<Package>();
+        public List<Package> packageList;
 
-        ArrayList fNameList = new ArrayList();
-        ArrayList lNameList = new ArrayList();
-        ArrayList cityList = new ArrayList();
-        ArrayList streetList = new ArrayList();
-        ArrayList postalList = new ArrayList();
+        private ArrayList fNameList;
+        private ArrayList lNameList;
+        private ArrayList cityList;
+        private ArrayList streetList;
+        private ArrayList postalList;
 
 
         Random ran = new Random();
-        StreamReader reader = new StreamReader("...\\...\\TextFile\\Navne- 5163.txt");
 
-        StreamReader fNameReader = new StreamReader("...\\...\\TextFile\\fName.txt");
-        StreamReader fLameReader = new StreamReader("...\\...\\TextFile\\lName.txt");
-        StreamReader cityReader = new StreamReader("...\\...\\TextFile\\City.txt");
-        StreamReader streetReader = new StreamReader("...\\...\\TextFile\\Street.txt");
-        StreamReader postalReader = new StreamReader("...\\...\\TextFile\\Postal.txt");
+        private StreamReader fNameReader;
+        private StreamReader fLameReader;
+        private StreamReader cityReader;
+        private StreamReader streetReader;
+        private StreamReader postalReader;
         
         public PackageGenerator(){
+            packageList = new List<Package>();
+
+            fNameList = new ArrayList();
+            lNameList = new ArrayList();
+            cityList = new ArrayList();
+            streetList = new ArrayList();
+            postalList = new ArrayList();
+
+            ran = new Random();
+
+            fNameReader = new StreamReader("...\\...\\TextFile\\fName.txt");
+            fLameReader = new StreamReader("...\\...\\TextFile\\lName.txt");
+            cityReader = new StreamReader("...\\...\\TextFile\\City.txt");
+            streetReader = new StreamReader("...\\...\\TextFile\\Street.txt");
+            postalReader = new StreamReader("...\\...\\TextFile\\Postal.txt");
+
             genList(fNameReader, fNameList);
             genList(fLameReader, lNameList);
             genList(cityReader, cityList);

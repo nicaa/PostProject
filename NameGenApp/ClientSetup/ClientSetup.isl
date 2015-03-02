@@ -340,9 +340,11 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td>{CA6716CF-B305-4930-BCAF-D3E707D03A11}</td><td>SOURCE</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PostProjectClient.Primary_output</td><td>{9708F0F8-73A0-44ED-9DDD-918DBFE0AB1C}</td><td>INSTALLDIR</td><td>2</td><td/><td>postprojectclient.primary_ou</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PostProjectClient.Source_Files</td><td>{13CA4F2F-8A48-4B52-991D-F4F285240D4C}</td><td>SOURCE</td><td>2</td><td/><td>postprojectclient.source_fil</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td>{117C1A27-D6F9-4751-861A-B0FB7FC54F9C}</td><td>BIN</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{48D673BD-BB35-4F6B-9C30-7C6D4E0D5A5B}</td><td>RUN</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PostProjectClient.Content_Files</td><td>{9C32FC97-AC20-4D9B-95FB-90596F74131A}</td><td>INSTALLDIR</td><td>2</td><td/><td>postprojectclient.content_fi</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PostProjectClient.Primary_output</td><td>{5ED8226F-34DD-4AAE-A5E7-F5CBFD6A40E7}</td><td>RUN</td><td>2</td><td/><td>postprojectclient.primary_ou</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PostProjectClient.Source_Files1</td><td>{89F0242D-C0D9-4407-952A-F1D88B859500}</td><td>INSTALLDIR</td><td>2</td><td/><td>postprojectclient.source_fil1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1051,7 +1053,8 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>SOURCE</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>BIN</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>RUN</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1133,6 +1136,7 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
+		<row><td>BIN</td><td>INSTALLDIR</td><td>bin</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
@@ -1157,8 +1161,8 @@
 		<row><td>ProgramFiles64Folder</td><td>TARGETDIR</td><td>.:Prog64~1|Program Files 64</td><td/><td>0</td><td/></row>
 		<row><td>ProgramFilesFolder</td><td>TARGETDIR</td><td>.:PROGRA~1|program files</td><td/><td>0</td><td/></row>
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
+		<row><td>RUN</td><td>BIN</td><td>run</td><td/><td>0</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
-		<row><td>SOURCE</td><td>INSTALLDIR</td><td>source</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
 		<row><td>StartupFolder</td><td>TARGETDIR</td><td>.:StartUp</td><td/><td>3</td><td/></row>
@@ -1865,8 +1869,10 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>PostProjectClient.Content_Files</td></row>
 		<row><td>AlwaysInstall</td><td>PostProjectClient.Primary_output</td></row>
-		<row><td>AlwaysInstall</td><td>PostProjectClient.Source_Files</td></row>
+		<row><td>AlwaysInstall</td><td>PostProjectClient.Source_Files1</td></row>
 	</table>
 
 	<table name="File">
@@ -1881,8 +1887,9 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
+		<row><td>postprojectclient.content_fi</td><td>PostProjectClient.Content_Files</td><td>PostProjectClient.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PostProjectClient&gt;|ContentFiles</td><td>3</td><td/></row>
 		<row><td>postprojectclient.primary_ou</td><td>PostProjectClient.Primary_output</td><td>PostProjectClient.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PostProjectClient&gt;|Built</td><td>3</td><td/></row>
-		<row><td>postprojectclient.source_fil</td><td>PostProjectClient.Source_Files</td><td>PostProjectClient.Source Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PostProjectClient&gt;|SourceFiles</td><td>3</td><td/></row>
+		<row><td>postprojectclient.source_fil1</td><td>PostProjectClient.Source_Files1</td><td>PostProjectClient.Source Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PostProjectClient&gt;|SourceFiles</td><td>3</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2026,9 +2033,11 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_13DDD327_5E5A_4ED3_B3D1_7EAB82EA48B2_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PostProjectClient.Primary_output</td><td/><td/><td>_0735CA4E_4432_4165_8221_C2B6E71F572F_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PostProjectClient.Source_Files</td><td/><td/><td>_3EE803D3_27EC_48FB_B831_82A97E2F989F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_97B9102C_979F_498D_B684_EF0C661021D0_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_74911AB5_9AA8_4618_8B0B_0FF36BAD7B65_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PostProjectClient.Content_Files</td><td/><td/><td>_325D22FD_263B_4B15_BC78_3D9EDD6C7BB6_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PostProjectClient.Primary_output</td><td/><td/><td>_F0781D41_D7C8_409C_81F4_601B2D13EDA5_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PostProjectClient.Source_Files1</td><td/><td/><td>_16F37F07_F2BB_4720_954F_3071FB0C8BC7_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -4441,8 +4450,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>PostProjectClient.Primary_output</td><td/><td>postpr_1_postproject_inc.</td><td>2</td></row>
-		<row><td>FileKey2</td><td>PostProjectClient.Primary_output</td><td/><td>client_1_clientsetup</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">

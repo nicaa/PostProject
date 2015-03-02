@@ -14,11 +14,10 @@ namespace PostProjectClient
 {
     public partial class Form1 : Form
     {
-        //private PackageGenerator packageGenerator;
+        private PackageGenerator packageGenerator;
         public Form1()
         {
             InitializeComponent();
-            //packageGenerator = new PackageGenerator();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,9 +29,11 @@ namespace PostProjectClient
         private void getPackageBtn_Click(object sender, EventArgs e)
         {
             PackageServicesClient client = new PackageServicesClient();
-            //Package newPackage = packageGenerator.getRandomPackage();
+            packageGenerator = new PackageGenerator();
 
-            //client.CreatePackage(newPackage.recipientFirstName, newPackage.recipientLastName, newPackage.recipientStreet, newPackage.recipientCity, newPackage.recipientPostalCode);
+            Package newPackage = packageGenerator.getRandomPackage();
+
+            client.CreatePackage(newPackage.recipientFirstName, newPackage.recipientLastName, newPackage.recipientStreet, newPackage.recipientCity, newPackage.recipientPostalCode);
             client.CreatePackage("Hej", "Hej", "Hej", "Hej", "Hej");
         }
     }
