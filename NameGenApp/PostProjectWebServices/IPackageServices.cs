@@ -22,6 +22,6 @@ namespace PostProjectWebServices
         void CreatePackage(String firstName, String lastName, String street, String city, String postalCode);
 
         [OperationContract]
-        void GatherCityStatistics();
+        void CountPackagesPerCity();
     }
 }

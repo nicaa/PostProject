@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using PostProjectWebServices.Models;
 using PostProjectWebServices.Models.Repositories;
+using PostProjectWebServices.Statistics;
 
 namespace PostProjectWebServices
 {
@@ -14,6 +15,8 @@ namespace PostProjectWebServices
     public class PackageServices : IPackageServices
     {
         private IPackageRepository _packageRepository = new PackageRepository();
+        private StatisticsHandler _statisticsHandler = new StatisticsHandler();
+
         public void DoWork()
         {
             System.Diagnostics.Debug.WriteLine("Hello din service consumer!");
@@ -37,5 +40,9 @@ namespace PostProjectWebServices
             _packageRepository.CreatePackage(package);
         }
 
+        public void CountPackagesPerCity()
+        {
+            _statisticsHandler.CountPackagesPerCity();
+        }
     }
 }

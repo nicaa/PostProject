@@ -32,9 +32,13 @@ namespace PostProjectClient
             packageGenerator = new PackageGenerator();
 
             Package newPackage = packageGenerator.getRandomPackage();
-
             client.CreatePackage(newPackage.recipientFirstName, newPackage.recipientLastName, newPackage.recipientStreet, newPackage.recipientCity, newPackage.recipientPostalCode);
-            client.CreatePackage("Hej", "Hej", "Hej", "Hej", "Hej");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PackageServicesClient client = new PackageServicesClient();
+            client.CountPackagesPerCity();
         }
     }
 }

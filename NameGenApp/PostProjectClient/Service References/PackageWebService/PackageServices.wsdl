@@ -25,6 +25,12 @@
   <wsdl:message name="IPackageServices_CreatePackage_OutputMessage">
     <wsdl:part name="parameters" element="tns:CreatePackageResponse" />
   </wsdl:message>
+  <wsdl:message name="IPackageServices_CountPackagesPerCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountPackagesPerCity" />
+  </wsdl:message>
+  <wsdl:message name="IPackageServices_CountPackagesPerCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountPackagesPerCityResponse" />
+  </wsdl:message>
   <wsdl:portType name="IPackageServices">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IPackageServices/DoWork" message="tns:IPackageServices_DoWork_InputMessage" />
@@ -37,6 +43,10 @@
     <wsdl:operation name="CreatePackage">
       <wsdl:input wsaw:Action="http://tempuri.org/IPackageServices/CreatePackage" message="tns:IPackageServices_CreatePackage_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPackageServices/CreatePackageResponse" message="tns:IPackageServices_CreatePackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountPackagesPerCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPackageServices/CountPackagesPerCity" message="tns:IPackageServices_CountPackagesPerCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPackageServices/CountPackagesPerCityResponse" message="tns:IPackageServices_CountPackagesPerCity_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPackageServices" type="tns:IPackageServices">
@@ -61,6 +71,15 @@
     </wsdl:operation>
     <wsdl:operation name="CreatePackage">
       <soap:operation soapAction="http://tempuri.org/IPackageServices/CreatePackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountPackagesPerCity">
+      <soap:operation soapAction="http://tempuri.org/IPackageServices/CountPackagesPerCity" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

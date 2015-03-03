@@ -159,6 +159,12 @@ namespace PostProjectClient.PackageWebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/CreatePackage", ReplyAction="http://tempuri.org/IPackageServices/CreatePackageResponse")]
         System.Threading.Tasks.Task CreatePackageAsync(string firstName, string lastName, string street, string city, string postalCode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/CountPackagesPerCity", ReplyAction="http://tempuri.org/IPackageServices/CountPackagesPerCityResponse")]
+        void CountPackagesPerCity();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPackageServices/CountPackagesPerCity", ReplyAction="http://tempuri.org/IPackageServices/CountPackagesPerCityResponse")]
+        System.Threading.Tasks.Task CountPackagesPerCityAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -210,6 +216,14 @@ namespace PostProjectClient.PackageWebService {
         
         public System.Threading.Tasks.Task CreatePackageAsync(string firstName, string lastName, string street, string city, string postalCode) {
             return base.Channel.CreatePackageAsync(firstName, lastName, street, city, postalCode);
+        }
+        
+        public void CountPackagesPerCity() {
+            base.Channel.CountPackagesPerCity();
+        }
+        
+        public System.Threading.Tasks.Task CountPackagesPerCityAsync() {
+            return base.Channel.CountPackagesPerCityAsync();
         }
     }
 }

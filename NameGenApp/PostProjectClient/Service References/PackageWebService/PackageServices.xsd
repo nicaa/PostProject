@@ -41,4 +41,14 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="CountPackagesPerCity">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CountPackagesPerCityResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

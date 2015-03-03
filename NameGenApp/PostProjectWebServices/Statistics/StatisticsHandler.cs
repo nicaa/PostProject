@@ -48,12 +48,8 @@ namespace PostProjectWebServices.Statistics
                 while (dataReader.Read())
                 {
                     cityStatistic = queryHandler.ExtractCityStatisticFromDataReader(dataReader, dataSource);
-                    city = dataReader[0].ToString();
-                    count = dataReader[1].ToString();
-
                     cityStatistic.DateTime = DateTime.Now;
                     cityStatistics.Add(cityStatistic);
-                    Console.WriteLine("By: " + city + " " + count);
                 }
             
             databaseConnection.Close();
