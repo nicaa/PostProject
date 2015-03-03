@@ -1,0 +1,7 @@
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\bin\Debug\WebServiceUnitTests.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\bin\Debug\WebServiceUnitTests.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\bin\Debug\PostProjectWebServices.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\bin\Debug\PostProjectWebServices.pdb
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\obj\Debug\WebServiceUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\obj\Debug\WebServiceUnitTests.dll
+C:\Users\Rasmus\Documents\GitHub\PostProject\NameGenApp\WebServiceUnitTests\obj\Debug\WebServiceUnitTests.pdb

@@ -71,7 +71,9 @@
     <Compile Include="Database\DataSource.cs" />
     <Compile Include="Database\QueryHandler.cs" />
     <Compile Include="IPackageServices.cs" />
+    <Compile Include="Models\CityStatistic.cs" />
     <Compile Include="Models\Package.cs" />
+    <Compile Include="Models\Repositories\CityRepository.cs" />
     <Compile Include="Models\Repositories\PackageRepository.cs" />
     <Compile Include="PackageServices.svc.cs">
       <DependentUpon>PackageServices.svc</DependentUpon>
@@ -81,6 +83,7 @@
     </Compile>
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics\StatisticsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

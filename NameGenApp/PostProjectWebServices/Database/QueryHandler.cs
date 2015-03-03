@@ -19,5 +19,26 @@ namespace PostProjectWebServices.Database
 
             return package;
         }
+
+        public String ExtractCityFromDataReader(MySqlDataReader dataReader, DataSource dataSource)
+        {
+            String city;
+
+            city = dataReader[dataSource.RecipientCity].ToString();
+
+            return city;
+        }
+
+        public CityStatistic ExtractCityStatisticFromDataReader(MySqlDataReader dataReader, DataSource dataSource)
+        {
+            CityStatistic cityStatistic = new CityStatistic();
+
+            cityStatistic.City = dataReader[0].ToString();
+            cityStatistic.Count = dataReader[1].ToString();
+
+            return cityStatistic;
+        }
+
+
     }
 }

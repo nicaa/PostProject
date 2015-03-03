@@ -42,7 +42,6 @@ namespace PostProjectWebServices.Models.Repositories
                 packages.Add(package);
             }
 
-
             databaseConnection.Close();
 
             return packages;

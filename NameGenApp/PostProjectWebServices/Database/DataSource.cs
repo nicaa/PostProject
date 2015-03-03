@@ -17,6 +17,7 @@ namespace PostProjectWebServices.Database
         // Tables
         private readonly String TABLE_PERSONS = "person";
         private readonly String TABLE_PACKAGES = "packages";
+        private readonly String TABLE_STATISTICS = "statistics";
 
         // Package table columns
         private readonly String PACKAGE_ID = "packageId";
@@ -25,6 +26,12 @@ namespace PostProjectWebServices.Database
         private readonly String RECIPIENT_STREET = "recipientStreet";
         private readonly String RECIPIENT_CITY = "recipientCity";
         private readonly String RECIPIENT_POSTAL_CODE = "recipientPostalCode";
+
+        //Statistics table columns
+        private readonly String STATISTIC_ID = "statisticId";
+        private readonly String STATISTIC_CITY = "city";
+        private readonly String STATISTIC_COUNT = "count";
+        private readonly String STATISTIC_DATE = "date";
 
         public string Server
         {
@@ -84,6 +91,31 @@ namespace PostProjectWebServices.Database
         public string RecipientPostalCode
         {
             get { return RECIPIENT_POSTAL_CODE; }
+        }
+
+        public string TableStatistics
+        {
+            get { return TABLE_STATISTICS; }
+        }
+
+        public string StatisticId
+        {
+            get { return STATISTIC_ID; }
+        }
+
+        public string StatisticCity
+        {
+            get { return STATISTIC_CITY; }
+        }
+
+        public string StatisticCount
+        {
+            get { return STATISTIC_COUNT; }
+        }
+
+        public string StatisticDate
+        {
+            get { return STATISTIC_DATE; }
         }
     }
 }

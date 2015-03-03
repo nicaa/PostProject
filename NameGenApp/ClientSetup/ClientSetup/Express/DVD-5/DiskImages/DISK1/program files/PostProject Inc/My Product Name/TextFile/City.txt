@@ -1,12 +1,3 @@
-Savannah
-Dallas
-Los Angeles
-Henderson
-Fremantle
-Soissons
-Dordrecht
-San Nicolás
-Poggiodomo
 Burntisland
 Jamioulx
 Hull
@@ -24,77 +15,27 @@ Forres
 Schwaz
 Provo
 Sant'Angelo in Pontano
+Sant'Angelo in Pontano
+Épernay
+Épernay
 Épernay
 Güssing
+Güssing
+Güssing
+Altavilla Irpina
+Altavilla Irpina
+Altavilla Irpina
 Altavilla Irpina
 Jalandhar
+Jalandhar
+Jalandhar
+Jalandhar
+Jalandhar
+Jalandhar
+Jalandhar
 Perpignan
-Rae Lakes
-Gallicchio
-Großpetersdorf
-Asso
-Monguelfo-Tesido
-Leut
-San Rafael
-Saint-Urbain
-Hearst
-Annan
-Kizilcahamam
-Olsztyn
-Córdoba
-Fredericton
-Sunderland
-Mabompr
-Trivandrum
-Castletown
-Orroli
-Troon
-Waitakere
-Cedar Rapids
-Noragugume
-Lamont
-Patarrá
-Spoleto
-Batiscan
-San Clemente
-Hove
-Burnpur
-Frignano
-Kitscoty
-Huntingdon
-Santarcangelo di Romagna
-Empoli
-Kavaratti
-Rigolet
-Montauban
-Tucson
-Bhopal
-Offenbach am Main
-São João de Meriti
-Motueka
-Khanewal
-Dreux
-Toledo
-Valparaíso de Goiás
-Fort William
-Loverval
-Broken Hill
-Lingen
-Anand
-Fort Simpson
-Vancouver
-Bunbury
-Ebenthal in Kärnten
-Henderson
-Ilkeston
-Vreren
-Slange
-Chandannagar
-Lasnigo
-Anamur
-Marzabotto
-Colobraro
-Akhisar
-Villers-lez-Heest
-Diegem
-Évreux
+Perpignan
+Perpignan
+Perpignan
+Perpignan
+Perpignan

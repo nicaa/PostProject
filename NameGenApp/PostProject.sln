@@ -22,6 +22,8 @@ Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "ClientSetup", "ClientSetup\
 		{48D5EC7C-9C2B-4B8B-ABEB-027103D07898} = {48D5EC7C-9C2B-4B8B-ABEB-027103D07898}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceUnitTests", "WebServiceUnitTests\WebServiceUnitTests.csproj", "{925BB95C-7381-4F7E-9F73-CF3E25574446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -81,6 +83,16 @@ Global
 		{A4529D1A-2C22-4D58-9D28-8F31D974E35D}.Release|Any CPU.Build.0 = SingleImage
 		{A4529D1A-2C22-4D58-9D28-8F31D974E35D}.SingleImage|Any CPU.ActiveCfg = SingleImage
 		{A4529D1A-2C22-4D58-9D28-8F31D974E35D}.SingleImage|Any CPU.Build.0 = SingleImage
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{925BB95C-7381-4F7E-9F73-CF3E25574446}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
