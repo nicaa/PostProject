@@ -7,23 +7,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
-    <_PublishTargetUrl>C:\deploy\webservice</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Rasmus\Documents\GitHub\PostProject\deploy\PostProjectWebService</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/PostProjectWebServices.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/05/2015 19:36:52</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/05/2015 15:58:58</publishTime>
     </File>
     <File Include="PackageServices.svc">
-      <publishTime>02/20/2015 17:05:36</publishTime>
+      <publishTime>03/05/2015 15:58:58</publishTime>
     </File>
     <File Include="Service1.svc">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/05/2015 15:58:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/05/2015 15:58:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

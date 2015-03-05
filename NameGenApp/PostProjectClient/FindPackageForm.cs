@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PostProjectClient.Logging;
 using PostProjectClient.PackageWebService;
 
 namespace PostProjectClient
 {
     public partial class FindPackageForm : Form
     {
+        private PackageLogger _packageLogger;
+
         public FindPackageForm()
         {
             InitializeComponent();
+            _packageLogger = new PackageLogger("retrievedPackagesLog");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,6 +43,9 @@ namespace PostProjectClient
             streetTxtbox.Text = package.recipientStreet;
             cityTxtbox.Text = package.recipientCity;
             postalCodeTxtbox.Text = package.recipientPostalCode;
+
+            _packageLogger.AppendLogEntry("PACKAGE RETRIEVED; ID: " + package.packageId);
+            _packageLogger.Flush();
         }
     }
 }

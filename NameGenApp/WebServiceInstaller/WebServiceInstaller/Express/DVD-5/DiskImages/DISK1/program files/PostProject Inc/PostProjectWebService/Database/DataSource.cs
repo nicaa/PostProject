@@ -10,10 +10,6 @@ namespace PostProjectWebServices.Database
         private readonly String USER = "user=root;";
         private readonly String PASSWORD = "password=1234";
 
-        private readonly String packageId = "packageId";
-        private readonly String packageSender = "sender";
-
-
         // Tables
         private readonly String TABLE_PERSONS = "person";
         private readonly String TABLE_PACKAGES = "packages";
