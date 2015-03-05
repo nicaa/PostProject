@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4fb25240-8960-4a4d-aa21-a1e0da6ed5e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/PostProjectWebService/PackageServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PackageServices.xsd" MetadataType="Schema" ID="b52da60a-484c-4176-86fd-4af4bcefd2e4" SourceId="1" SourceUrl="http://localhost/PostProjectWebService/PackageServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="PackageServices1.xsd" MetadataType="Schema" ID="25abf442-f4c3-4859-bf08-c65846e6bcac" SourceId="1" SourceUrl="http://localhost/PostProjectWebService/PackageServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="PackageServices.wsdl" MetadataType="Wsdl" ID="10c40ca3-8983-4167-963d-5261311a791f" SourceId="1" SourceUrl="http://localhost/PostProjectWebService/PackageServices.svc?wsdl" />
+    <MetadataFile FileName="PackageServices.disco" MetadataType="Disco" ID="db6386e1-1714-4e98-a1f1-f0d0560f2a92" SourceId="1" SourceUrl="http://localhost/PostProjectWebService/PackageServices.svc?disco" />
+    <MetadataFile FileName="PackageServices2.xsd" MetadataType="Schema" ID="9f325923-b39d-4047-ba87-f119f0e98353" SourceId="1" SourceUrl="http://localhost/PostProjectWebService/PackageServices.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

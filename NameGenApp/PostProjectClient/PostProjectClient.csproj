@@ -63,7 +63,7 @@
     <Compile Include="Models\PackageGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\PackageWebService\Reference.cs">
+    <Compile Include="Service References\PostProjectWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -92,31 +92,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\PackageWebService\PackageServices.wsdl" />
-    <None Include="Service References\PackageWebService\PackageServices.xsd">
+    <None Include="Service References\PostProjectWebService\PackageServices.wsdl" />
+    <None Include="Service References\PostProjectWebService\PackageServices.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\PackageWebService\PackageServices1.xsd">
+    <None Include="Service References\PostProjectWebService\PackageServices1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\PackageWebService\PackageServices2.xsd">
+    <None Include="Service References\PostProjectWebService\PackageServices2.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\PackageWebService\PostProjectClient.PackageWebService.Package.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\PackageWebService\Reference.svcmap">
+    <None Include="Service References\PostProjectWebService\PackageServices.disco" />
+    <None Include="Service References\PostProjectWebService\configuration91.svcinfo" />
+    <None Include="Service References\PostProjectWebService\configuration.svcinfo" />
+    <None Include="Service References\PostProjectWebService\PostProjectClient.PostProjectWebService.Package.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PostProjectWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\PackageWebService\configuration.svcinfo" />
-    <None Include="Service References\PackageWebService\configuration91.svcinfo" />
-    <None Include="Service References\PackageWebService\PackageServices.disco" />
     <Content Include="TextFile\City.txt" />
     <Content Include="TextFile\fName.txt" />
     <Content Include="TextFile\lName.txt" />
@@ -128,7 +128,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\PackageWebService\" />
+    <WCFMetadataStorage Include="Service References\PostProjectWebService\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

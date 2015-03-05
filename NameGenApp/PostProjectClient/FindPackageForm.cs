@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PostProjectClient.Logging;
-using PostProjectClient.PackageWebService;
+using PostProjectClient.PostProjectWebService;
 
 namespace PostProjectClient
 {

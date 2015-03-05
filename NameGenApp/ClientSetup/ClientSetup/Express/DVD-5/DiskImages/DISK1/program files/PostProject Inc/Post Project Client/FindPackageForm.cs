@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PostProjectClient.Logging;
-using PostProjectClient.PackageWebService;
+using PostProjectClient.PostProjectWebService;
 
 namespace PostProjectClient
 {
@@ -45,6 +45,7 @@ namespace PostProjectClient
             postalCodeTxtbox.Text = package.recipientPostalCode;
 
             _packageLogger.AppendLogEntry("PACKAGE RETRIEVED; ID: " + package.packageId);
+            _packageLogger.Flush();
         }
     }
 }

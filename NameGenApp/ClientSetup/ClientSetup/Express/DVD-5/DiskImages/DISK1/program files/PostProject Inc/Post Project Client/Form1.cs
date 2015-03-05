@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PostProjectClient.Logging;
 using PostProjectClient.Models;
-using PostProjectClient.PackageWebService;
+using PostProjectClient.PostProjectWebService;
 
 namespace PostProjectClient
 {
